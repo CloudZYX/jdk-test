@@ -19,7 +19,7 @@ public class StringUtil {
             }else {
                 // 保持大写，并下一个字母依然要转换为小写
                 lowerFlag = true;
-                result.append(c);
+                result.append(upperChar(c));
             }
         }
 
@@ -29,6 +29,14 @@ public class StringUtil {
     private static char lowerChar(char c){
         if ((c >= 'A') && (c <= 'Z')){
             return c += 32;
+        }else {
+            return c;
+        }
+    }
+
+    private static char upperChar(char c){
+        if ((c >= 'a') && (c <= 'z')){
+            return c -= 32;
         }else {
             return c;
         }
