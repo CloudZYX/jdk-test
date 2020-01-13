@@ -8,6 +8,15 @@
     <artifactId>jdk-test</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.29</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <!-- 指定jdk -->
